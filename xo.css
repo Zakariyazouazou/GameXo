@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: red;
+    width: 80%;
+    text-align: center;
+}
+.titel{
+    font-size: 4em;
+}
+
+.container_game{
+    margin-top: 10px;
+    background-color: gray;
+    height: 30em;
+}
+
+.case{
+    background-color: blue;
+    margin: 3px;
+    width: 32.5%;
+    height: 32%;
+    float: left;
+    margin-left: 4px;
+    border-radius: 20px;
+    transition: 0.1s ease;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+
+}
+
+
+.case:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+    box-shadow:0px 0px 0px 4px black ; 
+}
+
+
+
+@media screen and (max-width:513px) {
+    .case{
+        width:31%
+    }
+}
+
